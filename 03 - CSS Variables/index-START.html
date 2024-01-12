@@ -69,7 +69,9 @@
 
     }
 
-    inputs.forEach(input => input)
+    inputs.forEach(input => input.addEventListener('change', handleUpdates))
+    inputs.forEach(input => input.addEventListener('mousemove', handleUpdates))
+
   </script>
 
 </body>
